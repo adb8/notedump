@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notedump</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div id="home">
+      <div id="cmd">notedump</div>
+      <div id="pbtn">login</div>
+      <div id="sbtn">signup</div>
+    </div>
+
+    <div id="login">
+      <img src="images/back_button.png" class="back" width="50px" />
+      <input type="text" placeholder="enter name" id="username" />
+      <input type="password" placeholder="enter pass" id="password" />
+      <div id="logn">login</div>
+    </div>
+
+    <div id="signup">
+      <img src="images/back_button.png" class="back" width="50px" />
+      <input id="si1" type="text" placeholder="enter name" />
+      <input id="si2" type="password" placeholder="enter pass" />
+      <div id="mbtn">signup</div>
+    </div>
+
+    <div id="joindump">
+      <img src="images/back_button.png" class="back" width="50px" />
+      <div id="jdump" class="dumpc">join a notedump</div>
+      <div id="mdump" class="dumpc">make a notedump</div>
+    </div>
+
+    <div id="joincode">
+      <img src="images/back_button.png" class="back" width="50px" />
+      <input id="cinput" type="text" placeholder="enter join code" />
+      <input id="binput" type="text" placeholder="enter dump name" />
+      <div id="jbtn">join</div>
+    </div>
+
+    <div id="makedump">
+      <img src="images/back_button.png" class="back" width="50px" />
+      <input type="text" placeholder="enter name" id="makename" />
+      <input type="text" placeholder="enter code" id="makecode" />
+      <div id="publish">create notedump</div>
+    </div>
+
+    <div id="main">
+      <div id="topbar">
+        <div id="header"></div>
+        <div id="navbar">
+          <input type="text" id="sbar" placeholder="search" />
+          <img src="images/back_button.png" id="backbtn" />
+          <img src="images/add_button.png" id="uplbtn" />
+        </div>
+      </div>
+      <div id="notes"></div>
+    </div>
+
+    <div id="upload">
+      <div id="uplbar">
+        <img src="images/back_button.png" id="uplback" />
+        <img src="images/add_button.png" id="uplup" />
+      </div>
+      <textarea
+        type="text"
+        placeholder="title"
+        class="upi"
+        id="title"
+      ></textarea>
+      <textarea
+        type="text"
+        placeholder="content"
+        class="upi"
+        id="docu"
+      ></textarea>
+      <textarea type="text" placeholder="tags" class="upi" id="tags">
+      </textarea>
+    </div>
+
+    <div id="showcard">
+      <img src="images/back_button.png" id="scb" width="40px"/>
+      <div>
+        <textarea readonly
+          type="text"
+          class="upi"
+          id="sct"
+        ></textarea>
+        <textarea readonly
+          type="text"
+          class="upi"
+          id="scc"
+        ></textarea>
+        <textarea readonly type="text" class="upi" id="sca">
+        </textarea>
+      </div>
+    </div>
+  </body>
+</html>
